@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lecture about computer screens</title>
+
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=jquery.scrollTo.min.js></script>
+
+    <script>
+        jQuery(function($) {
+            $.scrollTo(0);
+            $('#link1').click(
+                function() { 
+                    $.scrollTo($('#crtParts'), 1000); 
+                }
+            );
+            $('#link2').click(
+                function() { 
+                    $.scrollTo($('#crtOperate'), 1000); 
+                }
+            );
+            $('#link3').click(
+                function() { 
+                    $.scrollTo($('#lcdParts'), 1000); 
+                }
+            );
+            $('#link4').click(
+                function() { 
+                    $.scrollTo($('#lcdOperate'), 1000); 
+                }
+            );
+            $('.scrollUp').click(
+                function() { 
+                    $.scrollTo($('body'), 1000); 
+                }
+            );
+        });
+
+        $(window).scroll( function() {
+            if($(this).scrollTop()>100)
+                $('.scrollUp').fadeIn();
+            else
+                $('.scrollUp').fadeOut();
+        });
+    </script>
+
+</head>
+<body>
+    <div id="logo">Computer screens lecture</div>
+    <div id="container">
+        <a href="#" class="scrollUp"></a>
+        <div id="contentList">
+            <ol>
+                <li>
+                    CRT screens
+                    <ul>
+                        <li><a id="link1" href="#">Monitor parts</a></li>
+                        <li><a id="link2" href="#">Operating principles</a></li>
+                    </ul>
+                </li>
+                <li>
+                    LCD screens
+                    <ul>
+                        <li><a id="link3" href="#">Monitor parts</a></li>
+                        <li><a id="link4" href="#">Operating principles</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="slide" id="crtParts">
+            <h1>Monitor parts</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet vehicula lacus, finibus tincidunt magna. Pellentesque laoreet rutrum mauris ut accumsan. Donec id cursus arcu. Suspendisse potenti. Suspendisse et ante porta, bibendum est at, elementum erat. Vestibulum varius lectus ac ipsum lobortis, at interdum orci tincidunt. Phasellus consectetur odio rutrum nunc ultrices, eu ultrices erat imperdiet. Vestibulum lacinia condimentum tincidunt.
+            <br/>    
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In fringilla massa eu urna feugiat, commodo fringilla neque pulvinar. Suspendisse porta mollis convallis. Vestibulum quis ultricies orci. Fusce gravida, erat id luctus sagittis, felis felis rutrum dui, id ornare turpis elit vel dui. Nullam vel convallis justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </div>
+        <div class="slide" id="crtOperate">
+            <h1>Operating principles</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet vehicula lacus, finibus tincidunt magna. Pellentesque laoreet rutrum mauris ut accumsan. Donec id cursus arcu. Suspendisse potenti. Suspendisse et ante porta, bibendum est at, elementum erat. Vestibulum varius lectus ac ipsum lobortis, at interdum orci tincidunt. Phasellus consectetur odio rutrum nunc ultrices, eu ultrices erat imperdiet. Vestibulum lacinia condimentum tincidunt.
+            <br/>    
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In fringilla massa eu urna feugiat, commodo fringilla neque pulvinar. Suspendisse porta mollis convallis. Vestibulum quis ultricies orci. Fusce gravida, erat id luctus sagittis, felis felis rutrum dui, id ornare turpis elit vel dui. Nullam vel convallis justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </div>
+        <div class="slide" id="lcdParts">
+            <h1>Monitor parts</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet vehicula lacus, finibus tincidunt magna. Pellentesque laoreet rutrum mauris ut accumsan. Donec id cursus arcu. Suspendisse potenti. Suspendisse et ante porta, bibendum est at, elementum erat. Vestibulum varius lectus ac ipsum lobortis, at interdum orci tincidunt. Phasellus consectetur odio rutrum nunc ultrices, eu ultrices erat imperdiet. Vestibulum lacinia condimentum tincidunt.
+            <br/>    
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In fringilla massa eu urna feugiat, commodo fringilla neque pulvinar. Suspendisse porta mollis convallis. Vestibulum quis ultricies orci. Fusce gravida, erat id luctus sagittis, felis felis rutrum dui, id ornare turpis elit vel dui. Nullam vel convallis justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </div>
+        <div class="slide" id="lcdOperate">
+            <h1>Operating principles</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet vehicula lacus, finibus tincidunt magna. Pellentesque laoreet rutrum mauris ut accumsan. Donec id cursus arcu. Suspendisse potenti. Suspendisse et ante porta, bibendum est at, elementum erat. Vestibulum varius lectus ac ipsum lobortis, at interdum orci tincidunt. Phasellus consectetur odio rutrum nunc ultrices, eu ultrices erat imperdiet. Vestibulum lacinia condimentum tincidunt.
+            <br/>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In fringilla massa eu urna feugiat, commodo fringilla neque pulvinar. Suspendisse porta mollis convallis. Vestibulum quis ultricies orci. Fusce gravida, erat id luctus sagittis, felis felis rutrum dui, id ornare turpis elit vel dui. Nullam vel convallis justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </div>
+    </div>
+    <div id="footer">Site created during html training course.</div>
+</body>
+</html>

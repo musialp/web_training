@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maths in JS</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    
+<script>
+    var pln = 1000;
+    document.write("Payment: " + pln + " PLN <br /> <br />");
+
+    var plnToUsd = 3.58204678;
+    var usd = pln / plnToUsd;
+    document.write("Balance: " + usd + " USD <br />");
+
+    usd = Math.floor(usd * 100) / 100;
+    document.write("Balance: " + usd + " USD <br /><br />");
+
+    var shopping = 23.99;
+    document.write("Shopping: " + shopping + " USD <br />");
+
+    var commission = 0.02 * shopping;
+    document.write("Commission: " + commission + " USD <br />");
+    
+    commission = Math.ceil(commission * 100) / 100;
+    document.write("Commission: " + commission + " USD <br />");
+
+    usd = usd - shopping - commission;
+    usd = usd.toFixed(2);
+    document.write("Balance: " + usd + " USD <br /><br />");
+
+    usd = 225.99;
+    usd = Math.trunc(usd);
+    document.write("Balance: " + usd + " USD <br /><br />");
+
+</script>
+
+</body>
+</html>

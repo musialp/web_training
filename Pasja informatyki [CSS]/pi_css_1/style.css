@@ -1,0 +1,26 @@
+body {
+    background-color: grey;
+    font-family: Verdana;
+    font-size: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+    color: red;
+}
+
+a:link {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}

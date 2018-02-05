@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List numbers</title>
+
+    <script type="text/javascript">
+        function listNumbers() {
+            var firstNumber = new Number(document.getElementById("firstNumber").value);
+            var secondNumber = new Number(document.getElementById("secondNumber").value);
+            var firstNumberLength = document.getElementById("firstNumber").value.length;
+            var secondNumberLenght = document.getElementById("secondNumber").value.length;
+            var firstNumberNan = !(firstNumber > 0 || firstNumber < 0 || firstNumber == 0);
+            var secondNumberNan = !(secondNumber > 0 || secondNumber < 0 || secondNumber == 0);
+
+            if (firstNumberNan && secondNumberNan) {
+                document.getElementById("result").innerHTML = "Enetered values are not numbers";
+            }
+            else if (firstNumberNan) {
+                document.getElementById("result").innerHTML = "First enetered value is not number";
+            }
+            else if (secondNumberNan) {
+                document.getElementById("result").innerHTML = "Second enetered value is not number";
+            }
+            else if (firstNumberLength == 0 && secondNumberLenght == 0) {
+                document.getElementById("result").innerHTML = "Enter some numbers";
+            }
+            else if (firstNumberLength == 0) {
+                document.getElementById("result").innerHTML = "Enter a number in the first field";
+            }
+            else if (secondNumberLenght == 0) {
+                document.getElementById("result").innerHTML = "Enter a number in the second field";
+            }
+            else if (firstNumber > secondNumber) {
+                var result = "";
+                for (i = firstNumber; i>secondNumber; i--) {
+                    result = result + i + " ";
+                }
+                result = result + secondNumber;
+                document.getElementById("result").innerHTML = "First number is higher than second number. <br/> Result: " + result;
+            }
+            else if (firstNumber <= secondNumber) {
+                var result = "";
+                for (i = firstNumber; i<secondNumber; i++) {
+                    result = result + i + " ";
+                }
+                result = result + secondNumber;
+                document.getElementById("result").innerHTML = "Result: " + result;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="firstNumber"/>
+    <input type="text" id="secondNumber"/>
+    <input type="submit" value="Show" onclick="listNumbers();"/>
+
+    <div id="result"></div>
+</body>
+</html>
