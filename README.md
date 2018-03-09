@@ -2,4 +2,6 @@ Repository for storing code created during training. Readme file will be updated
 
 # Completed courses and exercises
 
-## Pasja informatyki - [Youtube channel](https://www.youtube.com/user/MiroslawZelent/)
+## Pasja informatyki - [Youtube channel](https://www.youtube.com/user/MiroslawZelent/ "YouTube channel page")
+
+## Advanced CSS and Sass: Take Your CSS to the Next Level! - [Udemy course page](https://www.udemy.com/advanced-css-and-sass/learn/v4/overview "Udemy course page")
