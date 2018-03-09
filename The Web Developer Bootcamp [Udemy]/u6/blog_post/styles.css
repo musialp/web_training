@@ -1,0 +1,38 @@
+body {
+	max-width: 700px;
+	width: 80%;
+	padding: 20px;
+	border: 20px solid #bdc3c7;
+	margin: 20px auto;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: #3498db;
+	letter-spacing: 0.2rem;
+	margin-top: 0px;
+}
+
+h2 {
+	color: #2c3e50;
+	font-weight: 700;
+	font-size: 2.0rem;
+}
+
+
+div p:first-of-type {
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    max-width: 700px;
+    background: #eeeeee;
+}
+
+.post {
+	margin-bottom: 20px;
+}
