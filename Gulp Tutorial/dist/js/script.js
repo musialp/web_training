@@ -1,0 +1,1 @@
+console.log("Concat test");var person={name:"Piotr",age:25};console.log(person.name);
