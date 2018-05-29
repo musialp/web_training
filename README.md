@@ -1,4 +1,4 @@
-Repository for storing code created during training. Readme file will be updated regularly as I complete courses and exercises.
+Repository for storing code created during training. Readme file will be updated regularly as I complete courses and exercises. More notable projects can be found in separate repositories.
 
 # Completed courses and exercises
 
@@ -13,3 +13,5 @@ Repository for storing code created during training. Readme file will be updated
 ## Gulp tutorial - [YouTube course playlist](https://www.youtube.com/watch?v=BTJhH9Z4cgk&list=PLQq-QfUNZpqi3lIOoW_oe1g26_27w5oPc/ "YouTube course playlist")
 
 ## The Advanced Web Developer Bootcamp - [Udemy course page](https://www.udemy.com/the-advanced-web-developer-bootcamp/learn/v4/overview "Udemy course page")
+
+## React 16 - The Complete Guide - [Udemy course page](https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/overview "Udemy course page")
